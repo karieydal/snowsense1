@@ -1,0 +1,100 @@
+nav {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.lang-menu{
+    top: 25px; 
+    right: 250px; 
+    position: fixed; 
+    z-index: 100000; 
+}
+
+.selected-lang {
+    cursor: pointer; 
+    display: flex; 
+    justify-content: space-between; 
+    line-height: 2; 
+    width: 110px; 
+    color: white; 
+}
+
+.selected-lang:before{
+    content: ''; 
+    display: inline-block; 
+    width: 32px; 
+    height: 32px; 
+    background-image: url(https://flagsapi.com/IS/flat/32.png); 
+    margin-left: 40px; 
+
+}
+
+.lang-menu ul {
+    margin: 0; 
+    padding: 0; 
+    background-color: #fff; 
+    border: 1px solid #f8f8f8; 
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px; 
+    display: none; 
+    position: absolute;  
+}
+
+.lang-menu ul li{
+    list-style: none; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+.lang-menu ul li a{
+    width: 125px; 
+    display: block; 
+    padding: 5px 10px; 
+}
+
+.lang-menu ul li a:before{
+    content: ''; 
+    display: inline-block; 
+    width: 32px; 
+    height: 32px; 
+    margin-right: 5px; 
+    vertical-align: middle; 
+}
+
+.lang-menu ul li a:hover{
+    background-color: #f2f2f2; 
+    color: black; 
+}
+
+.ie:before{
+    background-image: url(https://flagsapi.com/GB/flat/32.png); 
+}
+
+.no:before{
+    background-image: url(https://flagsapi.com/NO/flat/32.png); 
+}
+
+.lang-menu:hover ul {
+    display: block; 
+}
+
+
+@media only screen and (max-width: 1200px) {
+    .lang-menu{
+        top: 25px; 
+        right: 195px; 
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .lang-menu{
+        top: 90px; 
+        left: 10px; 
+        z-index: 0; 
+        position: absolute; 
+    }
+}
+
+
+
+

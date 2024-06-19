@@ -1,0 +1,265 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Holtwood+One+SC&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+
+@keyframes slide-in-top {
+    0% {
+      transform: translateX(-300%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .custom-button {
+    /* Button styles */
+    font-size: 30px;
+    z-index: 1000;
+    position: absolute;
+    top: 500px;
+    right: 200px;
+    backdrop-filter: blur(5px);
+    padding: 20px;
+    border-radius: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: 2px solid black;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    transition: background-color 0.4s, transform 0.4s, rotate 0.4s;
+    animation: slide-in-top 1.5s ease-out;
+  }
+  
+  .custom-button:hover {
+    background-color: black;
+    transform: scale(1.1) rotate(12deg);
+  }
+  
+
+.row{
+    width: 100%;
+    margin: 0 auto; 
+    padding: 100px 200px 0 200px; 
+}
+
+.about{
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    flex-wrap: wrap; 
+}
+
+.about-image {
+    flex:1; 
+    margin-right: 40px; 
+    overflow: hidden; 
+    
+}
+
+.about-image img {
+    max-width: 100%; 
+    height: auto; 
+    background: none; 
+    display: block;  
+    border: 1px solid; 
+    cursor: pointer; 
+    background: none;
+}
+
+
+.about-content{
+    flex: 1; 
+}
+
+.about-content-2{
+    
+}
+
+
+
+
+
+.about-content .read-more{
+    display: inline-block; 
+    padding: 10px; 
+}
+
+
+
+
+
+.row .about a {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: black;
+    color: white;
+    letter-spacing: 1px;
+    user-select: none;
+    margin-top: 15px; 
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+    transition: color 1s, border 1s ;
+}
+
+.row .about a::before {
+    content: '';
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: top 2s;
+    z-index: -1;
+}
+
+.row .about a:hover {
+    color: black;
+    border: 1px solid black;
+    font-weight: 600;
+    background: white; /* Fallback in case ::before doesn't work */
+}
+
+.row .about a:hover::before {
+    top: 0;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1026px){
+    .row{
+        padding: 50px 0 0 0; 
+    }
+
+    .about{
+        padding:20px; 
+        flex-direction: column; 
+    }
+
+    .about-image{
+        margin-right:0px; 
+        margin-bottom:20px; 
+        margin-left: 20px; 
+        transition: transform 1s ease;
+    }
+
+    
+
+    .about-content h2{
+        margin-left: 20px;  
+}
+
+    .about-content p{
+            padding:0px; 
+            font-size:20px;
+            margin-left: 20px;  
+    }
+
+    .about-content .read-more{
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    .about-image img{
+        max-width: 100%; 
+        height: 100%;  
+    }
+}
+
+
+@keyframes slideInFromLeft {
+    0% {
+        opacity: 0;
+        left: -50%; 
+    }
+    100% {
+        opacity: 1;
+        left: 0; 
+    }
+}
+
+.snowsense-is {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+    position: absolute; 
+    bottom: 38rem; 
+    color: aliceblue;
+    font-size: 180px;
+    margin: 0 5rem; 
+    max-width: 100%;
+    max-height: 100%; 
+    text-wrap:balance; 
+    text-align: center;
+    z-index: 10; 
+    animation: slideInFromLeft 1.5s ease-in forwards; 
+}
+
+@media screen and (max-width: 1800px) {
+    .snowsense-is{
+         bottom: 30rem;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .snowsense-is{
+         font-size: 100px;
+         margin: 0 2rem; 
+         bottom: 40rem;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .snowsense-is{
+         font-size: 50px;
+         margin: 0 2rem; 
+    }
+
+}
+
+
+.greinarpdf{
+    position: flex; 
+    font-size: 16px; 
+    padding: 100px 0 0 0; 
+    text-align: left; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

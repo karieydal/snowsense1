@@ -1,0 +1,107 @@
+.footermain { 
+  width: 100%;
+  display: flex;
+  align-items: left;
+  justify-content: space-between;
+  background-color: #29335C; 
+  color: white; 
+  padding: 50px; 
+}
+
+@media only screen and (max-width: 750px){
+  .footermain{
+      display: inline-block; 
+  
+      
+  }
+}
+
+
+.footer2{
+  margin: 50px;  
+}
+
+
+.footer3 {
+  margin: 50px;
+}
+
+.footer3 h3 {
+  font-weight: 600;
+  font-size: 24px; 
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-top: 10px; /* Add some margin if needed */
+}
+
+.icon {
+  margin-right: 10px; /* Space between icon and text */
+}
+
+.footer2 h3{
+  font-weight: 600;
+  font-size: 24px; 
+}
+
+.footer2 h4{
+  font-size: 18px; 
+}
+
+.footer2 h5{
+  font-size: 18px; 
+}
+
+.footer4 {
+  margin: 50px; 
+  margin-right: 400px; 
+}
+
+.footer4 h3{
+  font-weight: 600;
+  font-size: 24px; 
+}
+
+.icon-fa {
+  width: 30px; 
+  height: 30px;
+}
+
+  
+  .logo_mynd1 {
+    position: absolute; 
+    top: 40px;
+    right: 40px;
+    z-index: 13;
+    width: 200px;
+    height: 200px;
+  }
+  
+  .logo1 {
+    position: absolute; 
+    top: 40px;
+    left: 40px;
+    z-index: 13;
+  }
+  
+  .footer3 a {
+    color: white; /* Set link color to white */
+    text-decoration: none; /* Remove underline from links */
+}
+
+.footer3 a:hover {
+    text-decoration: underline; /* Optional: Add underline on hover for links */
+}
+
+
+  
+
+
+  
+
+    
+
+
+

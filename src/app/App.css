@@ -1,0 +1,41 @@
+* {
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box; 
+}
+
+.page-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrap {
+    flex: 1;
+    padding-bottom: 3em;
+}
+
+body {
+    background-color:whitesmoke;
+    width: 100%; 
+    min-height: 100vh; 
+  
+    place-items: center; 
+  }
+
+
+  .page-containerus {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content-wrapus {
+    flex: 1;
+    padding-bottom: 3em;
+}
+
+
+
+
+

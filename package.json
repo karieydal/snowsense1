@@ -1,0 +1,47 @@
+{
+  "name": "snowsense3",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "devStart": "nodemon server.js",
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emailjs/browser": "^4.3.3",
+    "@maptiler/sdk": "^2.0.3",
+    "axios": "^1.7.2",
+    "bootstrap": "^5.3.3",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "hero-slider": "^3.2.1",
+    "leaflet": "^1.9.4",
+    "leaflet-defaulticon-compatibility": "^0.1.2",
+    "mongoose": "^8.4.1",
+    "next": "^14.2.3",
+    "next-auth": "^4.24.7",
+    "prisma": "^5.15.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-icons": "^5.2.1",
+    "react-leaflet": "^4.2.1",
+    "react-pdf": "^9.0.0",
+    "reactjs-popup": "^2.0.6",
+    "sqlite3": "^5.1.7"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.12",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "raw-loader": "^4.0.2",
+    "react-router-dom": "^6.23.1",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5"
+  }
+}
